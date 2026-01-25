@@ -1,4 +1,4 @@
-export interface PorfolioPerformance {
+export interface PortfolioPerformance {
     initialInvestment: number;
     currentValue: number;
     profitOrLoss: number;
@@ -8,9 +8,10 @@ export interface PorfolioPerformance {
 
 
 
-export function calculatePortfolioPerformance(): any {
-    let initialInvestment = 10000;
-    let currentValue = 12000;
+export function calculatePortfolioPerformance( 
+    initialInvestment : number,
+    currentValue : number
+): PortfolioPerformance {
 
     // Calculates the profit or loss
     const profitOrLoss = currentValue - initialInvestment;
@@ -34,7 +35,7 @@ export function calculatePortfolioPerformance(): any {
         initialInvestment,
         currentValue,
         profitOrLoss,
-        percentageChange,
+        percentageChange : roundedPercentage,
         performanceSummary,
     };
 }

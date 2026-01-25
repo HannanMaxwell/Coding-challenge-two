@@ -22,7 +22,7 @@ describe("GET /api/v1/portfolio/performance", () => {
     it("should calculate portfolio performance and return 200 with correct data", async () => {
         // Arrange
         const initialInvestment = 10000;
-        const currentValue = 12000;
+        
         
         // Act
         const response = await request(app).get("/api/v1/portfolio/performance").query({ initialInvestment, currentValue });

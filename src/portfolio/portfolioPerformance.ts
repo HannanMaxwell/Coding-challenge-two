@@ -1,4 +1,4 @@
-export interfance PorfolioPerformance {
+export interface PorfolioPerformance {
     initialInvestment: number;
     currentValue: number;
     profitOrLoss: number;

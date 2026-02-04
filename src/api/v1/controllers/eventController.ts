@@ -1,3 +1,4 @@
+//imports
 import { Request, Response } from 'express';
 import { EventService } from '../services/eventService';
 import { HTTP_STATUS } from '../../../constants/httpConstants';

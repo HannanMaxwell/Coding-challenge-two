@@ -1,4 +1,5 @@
 import express, { Express } from "express";
+import eventRoutes from './api/v1/routes/eventRoutes';
 
 let app: Express = express();
 
@@ -11,7 +12,7 @@ app.get("/api/v1/health", (req, res) => {
     });
 });
 
-
+app.use('/api/v1/events', eventRoutes);
 
 
 
